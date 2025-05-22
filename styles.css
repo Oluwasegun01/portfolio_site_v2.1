@@ -1,0 +1,251 @@
+
+body, html {
+    background-color: #e4f9f5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 16px; /* A base font size for scaling */
+}
+
+/* Title Section */
+.title-cont {
+    text-align: center;
+    background-color: #007bff; /* Primary color */
+    color: white;
+    padding: 50px 20px;
+    border-bottom: 5px solid #0056b3; /* Border for separation */
+}
+
+.title-cont h1 {
+    font-size: 2.5rem; /* Adjusted font size for smaller screens */
+    margin-bottom: 10px;
+}
+
+.title-cont h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.title-cont p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* About Section */
+.about-cont {
+    text-align: center;
+    padding: 20px; /* Reduced padding for smaller screens */
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.8;
+}
+
+.about-cont h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.about-cont p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Skills Section */
+.skills-cont {
+    padding: 40px 20px;
+    text-align: left;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills-cont h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.skills-cont h4 {
+    font-size: 1.5rem;
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+.skills-cont ul {
+    list-style-type: none;
+    padding: 0;
+    padding-left: 20px; /* Padding for better alignment */
+}
+
+.skills-cont li {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+/* Projects Section */
+.projects-cont {
+    padding: 40px 20px;
+    text-align: left;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.8;
+}
+
+.projects-cont h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.projects-cont h4 {
+    font-size: 1.5rem;
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+.projects-cont p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact-cont {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-cont h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.contact-cont p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.contact-cont button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-cont button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Section */
+#footer {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-top: 5px solid #0056b3;
+}
+
+#footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Reduce gap between links */
+    flex-wrap: wrap; /* Allow links to wrap on smaller screens */
+}
+
+#footer li {
+    display: inline;
+}
+
+#footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+#footer p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    .title-cont h1 {
+        font-size: 2rem; /* Smaller font size for tablets */
+    }
+
+    .title-cont h2 {
+        font-size: 1.2rem;
+    }
+
+    .about-cont, .skills-cont, .projects-cont, .contact-cont {
+        padding: 20px; /* Reduced padding for smaller screens */
+    }
+
+    .projects-cont h4 {
+        font-size: 1.2rem; /* Adjust heading size */
+    }
+
+    .projects-cont p {
+        font-size: 0.9rem; /* Adjust paragraph size */
+    }
+
+    #footer ul {
+        flex-direction: column; /* Stack footer links vertically */
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .title-cont h1 {
+        font-size: 1.8rem; /* Smaller font size for mobile */
+    }
+
+    .title-cont h2 {
+        font-size: 1rem;
+    }
+
+    .about-cont, .skills-cont, .projects-cont, .contact-cont {
+        padding: 10px; /* Further reduce padding for mobile */
+    }
+
+    .projects-cont h4 {
+        font-size: 1rem;
+    }
+
+    .projects-cont p {
+        font-size: 0.8rem;
+    }
+
+    #footer ul {
+        gap: 5px; /* Reduce gap for mobile */
+    }
+}
